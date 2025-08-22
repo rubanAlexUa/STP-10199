@@ -4,7 +4,7 @@
   margin: 40px 0;
 }
 
-.container-about {
+.about-content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,7 @@
 
 .about-title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 40px;
   line-height: 1.2;
   text-align: center;
   color: #24274B;
