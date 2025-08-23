@@ -1,0 +1,11 @@
+body {
+  color: #24274b;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
