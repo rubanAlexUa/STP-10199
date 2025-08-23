@@ -1,3 +1,4 @@
-.header {
+.header-container {
   background: linear-gradient(#fa8fe3, #ffd9fa, #8e5fcf);
+  border-radius: 0 0 16px 16px;
 }
