@@ -8,6 +8,23 @@
   justify-content: space-between;
 }
 
+.burger-button {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .burger-button {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    position: fixed;
+  }
+  .header-container {
+    justify-content: space-around;
+  }
+}
+
 .game-logo {
   border-radius: 12px;
 }
