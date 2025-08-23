@@ -1,8 +1,11 @@
 .header-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background: linear-gradient(#fa8fe3, #ffd9fa, #8e5fcf);
   border-radius: 0 0 16px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .game-logo {
