@@ -7,14 +7,6 @@
   margin: 0 auto;
 }
 
-/*tablet*/
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-}
-
 /* desktop */
 @media screen and (min-width: 1200px) {
   .container {
