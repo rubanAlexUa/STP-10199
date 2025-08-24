@@ -41,7 +41,23 @@
   text-align: center;
   width: 269px;
 }
-@media screen and (min-width: 1220px) {
+
+.heading-three {
+  width: 150px;
+}
+
+.hero-pussle-top {
+  transform: rotate(150deg);
+  right: 30px;
+  top: 100px;
+}
+.hero-pussle-bottom {
+  bottom: -20px;
+  left: 20px;
+  transform: rotate(-135deg);
+}
+
+@media screen and (min-width: 1200px) {
   .hero-conainer {
     gap: 24px;
   }
@@ -72,5 +88,9 @@
     bottom: -40px;
     left: 0;
     transform: rotate(160deg);
+  }
+
+  .heading-three {
+    width: 100%;
   }
 }
