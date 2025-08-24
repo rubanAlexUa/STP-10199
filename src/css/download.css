@@ -1,0 +1,92 @@
+.download-container{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+gap: 8px;
+border-radius: 24px;
+padding: 32px 160px;
+width: 1040px;
+margin: 0 auto;
+height: 406px;
+background-color: #FFD9FA;
+
+}
+
+.download-title{
+font-weight: 400;
+font-size: 60px;
+line-height: 1.13333;
+text-align: center;
+color: var(--text-color);
+}
+
+.download-subtitle{
+    font-weight: 400;
+font-size: 24px;
+gap: 32px;
+line-height: 1.33333;
+color: var(--text-color);
+}
+
+.button-google{
+   display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 44px; 
+border-radius: 24px;
+padding: 26px 76px;
+width: 328px;
+ transition: background-color 0.3s ease;
+height: 80px;
+background-color: #adb7fc;
+}
+
+.button-google:hover {
+  background-color: #8f9ffb; /* Darker shade on hover */
+  cursor: pointer;
+}
+
+.btn{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
+gap: 12px;
+width: 32px;
+height: 32px;
+}
+
+.btn-google{
+font-weight: 400;
+font-size: 24px;
+width: 176px;
+height: 28px;
+line-height: 1.33333;
+color: var(--text-color);
+}
+
+.download-score{
+font-weight: 400;
+font-size: 24px;
+line-height: 1.33333;
+gap: 8px;
+text-align: center;
+color: var(--text-color);
+}
+
+.download-about{
+display: flex;
+gap: 61px;
+width: 720px;
+justify-content: center;
+align-items: center;
+}
+
+.download-info{
+    font-weight: 400;
+font-size: 18px;
+line-height: 1.55556;
+color: var(--text-color);
+}
