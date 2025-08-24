@@ -6,7 +6,7 @@
   padding-top: 24px;
   padding-bottom: 24px;
   background: linear-gradient(#fa8fe3, #ffd9fa, #8e5fcf);
-  border-radius: 0 0 16px 16px;
+  border-radius: 0 0 8px 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -22,8 +22,22 @@
   border: none;
 }
 
-@media screen and (max-width: 1200px) {
-  .list-navigation {
+.list-navigation {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    border-radius: 0 0 16px 16px;
+  }
+  .header-heading-mobile {
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -33,9 +47,6 @@
     border: 0;
     padding: 0;
   }
-}
-
-@media screen and (min-width: 1200px) {
   .game-logo {
     max-width: 64px;
   }
@@ -56,24 +67,25 @@
   .list-navigation {
     opacity: 1;
     visibility: visible;
+    position: static;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
     font-size: 20px;
     font-family: 'Spicy Rice', serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px 75px;
+    gap: 16px 50px;
   }
 
   .item-navigation {
-    flex-basis: calc((100% - 375px) / 6);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .header-container {
-    gap: 80px;
-  }
-  .item-navigation {
-    flex-basis: calc((100% - 480px) / 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc((100% - 250px) / 6);
+    text-align: center;
   }
 }
