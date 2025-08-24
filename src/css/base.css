@@ -8,3 +8,45 @@ body {
   font-size: 18px;
   line-height: 28px;
 }
+
+h1,
+h2,
+h3 {
+  font-family: 'Spicy Rice', serif;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 68px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+p {
+  font-size: 18px;
+  line-height: 28px;
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
