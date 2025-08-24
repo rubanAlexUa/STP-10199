@@ -1,8 +1,9 @@
 /* mobile */
 .container {
+  position: relative;
   min-width: 320px;
   max-width: 375px;
-  padding: 0 20px;
+  padding: 29px 20px;
   margin: 0 auto;
 }
 
@@ -10,14 +11,6 @@
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1040px;
-    padding: 0 50px;
-  }
-}
-
-/* desktop 2 */
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding: 0 50px;
+    padding: 48px 50px;
   }
 }
