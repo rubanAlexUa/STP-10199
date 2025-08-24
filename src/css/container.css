@@ -14,11 +14,3 @@
     padding: 48px 50px;
   }
 }
-
-/* desktop 2 */
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding: 48px 50px;
-  }
-}
