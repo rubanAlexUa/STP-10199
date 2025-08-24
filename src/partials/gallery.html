@@ -3,12 +3,6 @@
     <h3 class="gallery-head">Gallery</h3>
 
     <div class="gallery-box">
-      <svg class="icon-gallery" width="40" height="40">
-        <use href="../img/icons/left-bold.svg"></use>
-      </svg>
-    </div>
-
-    <div class="gallery-slider">
       <ul class="gallery">
         <li class="gallery-item">
           <picture>
@@ -170,11 +164,19 @@
           </picture>
     </div>
 
-    <div class="gallery-box">
-      <svg class="icon-gallery" width="40" height="40">
-        <use href="../img/icons/right-bold.svg"></use>
-      </svg>
+    <div class="gallery-slider">
+      <button class="swiper-button-left" aria-label="Previous slide">
+        <svg class="icon-swiper-left" aria-hidden="true" width="40" height="40">
+          <use href="../img/icons/left-bold.svg"></use>
+        </svg>
+      </button>
+      <button class="swiper-button-right" aria-label="Next slide">
+        <svg class="icon-swiper-right" aria-hidden="true" width="40" height="40">
+          <use href="../img/icons/right-bold.svg"></use>
+        </svg>
+      </button>
     </div>
 
+    <div class="swiper-pagination"></div>
   </div>
 </section>
