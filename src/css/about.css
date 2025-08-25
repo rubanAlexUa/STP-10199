@@ -10,10 +10,7 @@
 }
 
 .about-title {
-  font-weight: 700;
-  line-height: 1.2;
   text-align: center;
-  color: #24274b;
 }
 
 .about-content {
@@ -26,17 +23,12 @@
 
 .about-photo {
   border-radius: 16px;
-  object-fit: cover;
-  flex-shrink: 0;
-  width: 297px;
-  height: 404px;
 }
 
 .paragraph-about {
   text-align: center;
   border-radius: 16px;
   font-weight: 700;
-  line-height: 1.55556;
   color: #24274b;
 }
 
