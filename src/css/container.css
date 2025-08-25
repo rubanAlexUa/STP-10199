@@ -3,7 +3,7 @@
   position: relative;
   min-width: 320px;
   max-width: 375px;
-  padding: 29px 20px;
+  padding: 29px 10px;
   margin: 0 auto;
 }
 
@@ -11,6 +11,6 @@
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1040px;
-    padding: 48px 50px;
+    padding: 48px 20px;
   }
 }
