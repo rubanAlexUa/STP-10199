@@ -1,14 +1,8 @@
-#about {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
-}
-
 .about-content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 26px;
+  gap: 16px;
   border-radius: 24px;
   padding: 16px;
   background-color: #ffd9fa;
@@ -17,7 +11,6 @@
 
 .about-title {
   font-weight: 700;
-  font-size: 40px;
   line-height: 1.2;
   text-align: center;
   color: #24274b;
@@ -34,6 +27,7 @@
   padding: 26px 12px 24px 24px;
   width: 100%;
   flex-direction: column;
+  gap: 36px;
 }
 
 .about-photo {
@@ -45,6 +39,7 @@
 }
 
 .paragraph-about {
+  text-align: center;
   border-radius: 16px;
   font-weight: 700;
   font-size: 18px;
@@ -59,6 +54,15 @@
   .about-content {
     align-items: center;
     padding: 16px 1px 18px;
+  line-height: 1.55556;
+  color: #24274b;
+}
+
+@media (min-width: 1200px) {
+  .about-content-container {
+    gap: 24px;
+  }
+  .about-content {
     flex-direction: row;
   }
 
@@ -67,5 +71,7 @@
     flex-direction: column;
   }
  
-
+    text-align: start;
+    width: 678px;
+  }
 }
