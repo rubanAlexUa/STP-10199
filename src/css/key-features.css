@@ -1,8 +1,14 @@
+.features-pussle {
+  top: 0;
+  right: 0;
+  transform: rotate(-68deg);
+}
 .key-features-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
   gap: 13px;
 }
 
@@ -10,10 +16,6 @@
   border-radius: 8px;
 }
 
-.key-features-title {
-  text-align: center;
-  color: #24274b;
-}
 .key-features-content {
   display: flex;
   justify-content: center;
@@ -40,6 +42,10 @@
 }
 
 @media (min-width: 1200px) {
+  .features-pussle {
+    position: absolute;
+    top: -50px;
+  }
   .key-features-content {
     flex-direction: row;
     gap: 27px;
@@ -50,9 +56,6 @@
     max-width: none;
   }
 
-  .key-features-title {
-    text-align: center;
-  }
   .icon {
     flex-shrink: 0;
   }
