@@ -11,7 +11,7 @@
   gap: 26px;
   border-radius: 24px;
   padding: 16px;
-  background-color: #FFD9FA;
+  background-color: #ffd9fa;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -20,19 +20,20 @@
   font-size: 40px;
   line-height: 1.2;
   text-align: center;
-  color: #24274B;
+  color: #24274b;
   margin: 0;
-font-family:"Spicy Rice", sans-serif;
-font-style: normal;
+  font-family: 'Spicy Rice', sans-serif;
+  font-style: normal;
 }
 
 .about-content {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   gap: 36px;
   padding: 26px 12px 24px 24px;
   width: 100%;
+  flex-direction: column;
 }
 
 .about-photo {
@@ -45,39 +46,26 @@ font-style: normal;
 
 .paragraph-about {
   border-radius: 16px;
- font-weight: 700;
-font-size: 18px;
-line-height: 1.55556;
-color: var(--text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: var(--text-color);
   color: #24274b;
-  width: 678px;
- 
+  text-align: center;
 
 }
 
-
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .about-content {
-    flex-direction: column;
     align-items: center;
-   padding: 16px 1px 18px;
-   
-  }
-
-  .about-photo {
-    width: 100%;
-    height: auto;
+    padding: 16px 1px 18px;
+    flex-direction: row;
   }
 
   .paragraph-about {
-    width: 100%;
-    height: auto;
-    font-size: 15px;
-      text-align: center;
-
+    text-align: center;
+    flex-direction: column;
   }
+ 
 
-  .about-title {
-    font-size: 20px;
-  }
 }
