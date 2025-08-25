@@ -1,4 +1,7 @@
 .htp-pussle {
+  top: 50px;
+  left: 50px;
+  transform: rotate(60deg);
 }
 .how-to-play-container {
   display: flex;
@@ -33,6 +36,11 @@
 }
 
 @media (min-width: 1200px) {
+  .htp-pussle {
+    top: 0;
+    left: 100px;
+    transform: rotate(45deg);
+  }
   .how-to-play-container {
   }
 
