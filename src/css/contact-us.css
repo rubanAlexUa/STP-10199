@@ -1,0 +1,21 @@
+.contact-us-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px;
+}
+.main-contacts-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+}
+.main-contacts-item {
+  display: flex;
+  align-items: center;
+}
+.value-of-contact {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
