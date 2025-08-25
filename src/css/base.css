@@ -9,6 +9,10 @@ body {
   line-height: 28px;
 }
 
+.pussle {
+  position: absolute;
+}
+
 h1,
 h2,
 h3 {
