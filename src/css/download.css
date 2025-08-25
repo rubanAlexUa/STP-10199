@@ -44,7 +44,7 @@ background-color: #adb7fc;
 }
 
 .button-google:hover {
-  background-color: #8f9ffb; /* Darker shade on hover */
+  background-color: #8f9ffb;
   cursor: pointer;
 }
 
@@ -89,4 +89,16 @@ align-items: center;
 font-size: 18px;
 line-height: 1.55556;
 color: var(--text-color);
+}
+
+@media (min-width: 1200px) {
+.button-google {
+    padding: 26px 76px;
+  }
+
+  .download-about {
+    gap: 61px;
+    width: 720px;
+  }
+
 }

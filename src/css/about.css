@@ -4,6 +4,7 @@
   align-items: center;
   gap: 16px;
   border-radius: 24px;
+  padding: 16px;
   background-color: #ffd9fa;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -13,12 +14,18 @@
   line-height: 1.2;
   text-align: center;
   color: #24274b;
+  margin: 0;
+  font-family: 'Spicy Rice', sans-serif;
+  font-style: normal;
 }
 
 .about-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 36px;
+  padding: 26px 12px 24px 24px;
+  width: 100%;
   flex-direction: column;
   gap: 36px;
 }
@@ -35,6 +42,18 @@
   text-align: center;
   border-radius: 16px;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: var(--text-color);
+  color: #24274b;
+  text-align: center;
+
+}
+
+@media (min-width: 1200px) {
+  .about-content {
+    align-items: center;
+    padding: 16px 1px 18px;
   line-height: 1.55556;
   color: #24274b;
 }
@@ -48,6 +67,10 @@
   }
 
   .paragraph-about {
+    text-align: center;
+    flex-direction: column;
+  }
+ 
     text-align: start;
     width: 678px;
   }

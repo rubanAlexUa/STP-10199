@@ -1,11 +1,10 @@
 .how-to-play-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 16px;
-  width: 100%;
-    max-width: 1040px;
-  border-radius: 24px;
+ border-radius: 24px;
   margin: 0 auto;
    padding: 40px; 
    box-sizing: border-box;
@@ -15,7 +14,7 @@
   display: flex;
   justify-content: center; 
   align-items: flex-start;
-  flex-direction: row; 
+  flex-direction: column; 
   gap: 24px;           
 }
 
@@ -29,7 +28,7 @@
   margin: 0;
 }
 
-.how-to-play-span {
+.how-to-play-2 {
   font-weight: 400;
   font-size: 24px;
   text-align: center;
@@ -54,35 +53,20 @@ color: var(--text-color);
   flex: 1;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1200px) {
   .how-to-play-container {
     padding: 24px 16px; 
-    gap: 16px;
-  }
-
-  .how-to-play-title {
-    font-size: 28px;   
-  }
-
-  .how-to-play-span {
-    font-size: 18px;
   }
 
   .how-to-play-content {
-    flex-direction: column;  
+    flex-direction: row;  
     gap: 20px;
     align-items: stretch;    
   }
 
   .how-to-play-list,
   .how-to-play-list-2 {
-    flex: none;       
-    width: 100%; 
     gap: 8px;     
   }
 
-  .how-to-play-item {
-    font-size: 16px;  
-    line-height: 1.4;
-  }
 }
