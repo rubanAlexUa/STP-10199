@@ -1,0 +1,48 @@
+.about-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  border-radius: 24px;
+  background-color: #ffd9fa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.about-photo {
+  border-radius: 16px;
+}
+
+.paragraph-about {
+  text-align: center;
+  border-radius: 16px;
+  font-weight: 700;
+  color: #24274b;
+}
+
+@media (min-width: 1200px) {
+  .about-content-container {
+    padding: 24px 15px;
+    gap: 24px;
+  }
+  .about-content {
+    flex-direction: row;
+  }
+
+  .paragraph-about {
+    text-align: start;
+    width: 678px;
+  }
+}
