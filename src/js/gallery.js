@@ -12,19 +12,18 @@ new Swiper('.swiper', {
   spaceBetween: 8,
 
   navigation: {
-    enabled: false, 
+    enabled: false,
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
   breakpoints: {
-      1200: {
-         
-    slidesOffsetAfter: 60,
+    1200: {
+      slidesOffsetAfter: 60,
       slidesPerView: 3,
       spaceBetween: 9.5,
       navigation: {
-        enabled: true, 
+        enabled: true,
       },
     },
   },

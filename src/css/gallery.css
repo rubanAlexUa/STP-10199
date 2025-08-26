@@ -1,24 +1,6 @@
-.gallery-container {
-  margin: 0 auto;
-  padding: 0 16px 96px;
-}
-
 .gallery-head {
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
-  color: var(--text-color);
   margin-bottom: 32px;
 }
-
-.swiper.gallery-swiper {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 
 .swiper-slide {
   display: flex;
@@ -30,56 +12,27 @@
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: auto; 
+  height: auto;
   object-fit: cover;
 }
 
-
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-custom .swiper-button-prev,
+.swiper-custom .swiper-button-next {
   display: none;
 }
 
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: '';
-  color: #24274B;
-}
-
-
-@media (min-width: 1200px) {
-  
-.swiper.gallery-swiper{
-    box-sizing: border-box;
-}
-
-.gallery-head {
-  font-weight: 400;
-font-size: 40px;
-}
- 
-  
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    pointer-events: auto;
+@media screen and (min-width: 1200px) {
+  .swiper-custom .swiper-button-prev,
+  .swiper-custom .swiper-button-next {
+    display: block;
+    color: #24274b;
+    top: 55%;
   }
 
-
-  .swiper-button-prev svg,
-  .swiper-button-next svg {
-    display: block;
+  .swiper-custom .swiper-button-prev {
+    left: -25px;
+  }
+  .swiper-custom .swiper-button-next {
+    right: -25px;
   }
 }
