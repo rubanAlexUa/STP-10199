@@ -1,0 +1,103 @@
+.hero-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.button-hero {
+  background-color: #99a7ff;
+  border: none;
+  border-radius: 24px;
+  width: 214px;
+  padding: 16px 0;
+  transition: all 0.3s ease;
+}
+.button-hero:hover {
+  background-color: #8f9ffb;
+  cursor: pointer;
+}
+.button-hero:active,
+.button-hero:focus {
+  background-color: #8f9ffb;
+  cursor: pointer;
+  box-shadow: 0px 4px #00000059;
+}
+.button-hero-link {
+  color: #1e1e1e;
+  font-family: 'Spicy Rice', serif;
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-info {
+  text-align: center;
+  width: 269px;
+}
+
+.heading-three {
+  width: 150px;
+}
+
+.hero-pussle-top {
+  transform: rotate(150deg);
+  right: 30px;
+  top: 100px;
+}
+.hero-pussle-bottom {
+  bottom: -20px;
+  left: 20px;
+  transform: rotate(-135deg);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-conainer {
+    gap: 24px;
+  }
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+  }
+  .button-hero {
+    width: 328px;
+    padding: 24px 0;
+  }
+  .button-hero-link {
+    font-size: 24px;
+    line-height: 32px;
+    gap: 10px;
+  }
+  .hero-info {
+    text-align: center;
+    width: 862px;
+  }
+  .hero-pussle-top {
+    transform: rotate(-110deg);
+    right: 0;
+    top: 30px;
+  }
+  .hero-pussle-bottom {
+    bottom: -40px;
+    left: 0;
+    transform: rotate(160deg);
+  }
+
+  .heading-three {
+    width: 100%;
+  }
+}
