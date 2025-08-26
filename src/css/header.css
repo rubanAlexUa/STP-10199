@@ -1,10 +1,12 @@
+.container-not-header {
+  padding-top: 0;
+}
 .game-logo {
   max-width: 56px;
 }
 
 .header-container {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px;
   background: linear-gradient(#fa8fe3, #ffd9fa, #8e5fcf);
   border-radius: 0 0 8px 8px;
   display: flex;
@@ -20,6 +22,7 @@
 .burger-button {
   background-color: transparent;
   border: none;
+  transition: all 0.5s ease;
 }
 
 .list-navigation {
@@ -31,6 +34,58 @@
   margin: -1px;
   border: 0;
   padding: 0;
+}
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 1000px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
+
+.hidden {
+  transform: translateX(100%);
+}
+
+.menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #fff7f0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 25px;
+  transition: all 0.3s ease;
+}
+
+.menu-list-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-item-navigation {
+  font-size: 20px;
+  font-family: 'Spicy Rice', serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 50px;
+}
+
+.exit-button {
+  background-color: transparent;
+  border: none;
+  width: auto;
+  transition: all 0.5s ease;
 }
 
 @media screen and (min-width: 1200px) {
@@ -68,8 +123,8 @@
     opacity: 1;
     visibility: visible;
     position: static;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     margin: 0;
     border: 0;
     padding: 0;
@@ -85,7 +140,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: calc((100% - 250px) / 6);
+    width: calc((100% - 250px) / 6);
     text-align: center;
+    transition: all 0.3s ease;
+  }
+  .item-navigation:active,
+  .item-navigation:focus {
+    border: 1px solid #24274b;
+    border-radius: 8px;
+    box-shadow: 0px 4px 0.35em #00000059;
   }
 }
