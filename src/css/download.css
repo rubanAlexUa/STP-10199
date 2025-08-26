@@ -27,7 +27,7 @@
   justify-content: flex-start;
   border: none;
   border-radius: 24px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   background-color: #adb7fc;
   width: 214px;
   padding: 16px 13px;
@@ -37,7 +37,12 @@
   background-color: #8f9ffb;
   cursor: pointer;
 }
-
+.button-game:active,
+.button-game:focus {
+  background-color: #8f9ffb;
+  cursor: pointer;
+  box-shadow: 0px 4px #00000059;
+}
 .game-link {
   display: flex;
   flex-direction: row;
