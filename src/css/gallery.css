@@ -1,92 +1,85 @@
 .gallery-container {
-  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 16px 96px;
 }
 
-.swiper-wrapper{
-    display: flex;
-        align-items: center;
-        max-width: 100%;
-}
 .gallery-head {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
   text-align: center;
+  color: var(--text-color);
   margin-bottom: 32px;
 }
 
-
-.gallery-swiper {
+.swiper.gallery-swiper {
   position: relative;
-  padding: 16px 0;
-  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 
-.swiper-slide img.key-features-photo {
-  width: 332px;
-  height: 336px;
-  display: block;
-  border-radius: 16px;
-  object-fit: cover;
-  flex: 0 0 auto;
-   gap:9px; 
-}
-
-.swiper-slide:last-child {
-  margin-right: 0;
-  overflow:scroll
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: none;
-  border: none;
-  cursor: pointer;
-}
-.swiper-pagination{
+.swiper-slide {
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+}
+
+
+.swiper-button-prev,
 .swiper-button-next {
-  right: 0;
+  display: none;
 }
 
-.swiper-button-prev {
-  left: 0;
-}
 
-.swiper-button-next svg,
-.swiper-button-prev svg {
-  width: 40px;
-  height: 40px;
-  fill: #000;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+  color: #24274B;
 }
 
 
 @media (min-width: 1200px) {
-  .gallery-head {
-    margin-bottom: 16px;
+  
+.swiper.gallery-swiper{
+    box-sizing: border-box;
+}
+
+.gallery-head {
+  font-weight: 400;
+font-size: 40px;
+}
+ 
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    pointer-events: auto;
   }
 
-  .swiper-slide img.key-features-photo {
-    margin-right: 8px;
-  }
 
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
-  }
-
-  .swiper-button-next svg,
-  .swiper-button-prev svg {
-    width: 32px;
-    height: 32px;
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    display: block;
   }
 }
