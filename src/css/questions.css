@@ -1,11 +1,17 @@
+.questions-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
 .ac.ac-question-item {
   background-color: transparent;
   border: none;
 }
 .accordion-container .ac .ac-trigger {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 25px;
 }
+
 .accordion-container .ac.is-active > .ac-header .ac-icon-open {
   text-align: center;
   width: 15px;
@@ -37,4 +43,42 @@
 
 .ac-header {
   color: #24274b;
+}
+
+.ac-text-answer {
+  width: 860px;
+  padding: 50px;
+}
+
+.ac.ac-question-item .ac-panel.ac-answer-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paint,
+.brash {
+  position: absolute;
+}
+.paint {
+  width: 800px;
+  left: 60px;
+  z-index: -1;
+}
+
+.brush {
+  right: 70px;
+}
+
+@media screen and (min-width: 1200px) {
+  .paint {
+    width: 800px;
+    left: 60px;
+    z-index: -1;
+  }
+
+  .brush {
+    right: 70px;
+  }
 }
