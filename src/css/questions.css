@@ -9,11 +9,10 @@
 .accordion-container .ac .ac-trigger {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 5px;
 }
 
 .accordion-container .ac.is-active > .ac-header .ac-icon-open {
-  text-align: center;
   width: 15px;
   transform: translate(0, -50%);
   position: absolute;
@@ -43,11 +42,7 @@
 
 .ac-header {
   color: #24274b;
-}
-
-.ac-text-answer {
-  width: 860px;
-  padding: 50px;
+  text-align: center;
 }
 
 .ac.ac-question-item .ac-panel.ac-answer-text {
@@ -61,27 +56,40 @@
 .brush {
   position: absolute;
 }
+.ac-text-answer {
+  width: 65%;
+  padding: 20px 0;
+}
 .paint {
   z-index: -1;
-  left: 30px;
-  top: 30px;
+  left: 35px;
+  top: 0;
   position: absolute;
   width: 270px;
 }
 
 .brush {
+  right: 20px;
+  top: 50px;
 }
 
 @media screen and (min-width: 1200px) {
+  .accordion-container .ac .ac-trigger {
+    gap: 25px;
+  }
+  .ac-text-answer {
+    width: 750px;
+    padding: 50px 0;
+  }
   .paint {
     width: 800px;
-    left: 60px;
+    left: 75px;
     z-index: -1;
     top: 35px;
   }
 
   .brush {
-    top: 40px;
-    right: 70px;
+    top: 45px;
+    right: 50px;
   }
 }
