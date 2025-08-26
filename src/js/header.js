@@ -9,6 +9,7 @@ burgerButton.addEventListener('click', () => {
   exitButton.classList.remove('invisible');
   menu.classList.remove('hidden');
 });
+function openmodal() {}
 
 exitButton.addEventListener('click', exitMenu);
 function exitMenu() {
