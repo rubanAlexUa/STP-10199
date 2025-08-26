@@ -1,0 +1,40 @@
+.ac.ac-question-item {
+  background-color: transparent;
+  border: none;
+}
+.accordion-container .ac .ac-trigger {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-container .ac.is-active > .ac-header .ac-icon-open {
+  text-align: center;
+  width: 15px;
+  transform: translate(0, -50%);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.ac-trigger .ac-icon-close {
+  display: none;
+}
+
+.accordion-container .ac.is-active > .ac-trigger .ac-icon-close {
+  display: block;
+}
+
+.accordion-container .ac.is-active > .ac-trigger .ac-icon-open {
+  display: none;
+}
+
+.accordion-container .ac .ac-trigger::after {
+  display: none;
+  content: '';
+}
+.accordion-container .ac.is-active > .ac-trigger .ac-icon-close {
+  display: block;
+}
+
+.ac-header {
+  color: #24274b;
+}
