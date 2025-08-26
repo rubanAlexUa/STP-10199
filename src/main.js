@@ -1,1 +1,2 @@
-import './js/gallery';
+import './js/gallery.js';
+import './js/header.js';
