@@ -1,0 +1,60 @@
+.htp-pussle {
+  top: 50px;
+  left: 50px;
+  transform: rotate(60deg);
+}
+.how-to-play-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 24px;
+}
+
+.how-to-play-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.how-to-play-title {
+}
+
+.how-to-play-2 {
+  text-align: center;
+}
+
+.how-to-play-item {
+}
+
+.how-to-play-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (min-width: 1200px) {
+  .htp-pussle {
+    top: 0;
+    left: 100px;
+    transform: rotate(45deg);
+  }
+  .how-to-play-container {
+  }
+
+  .how-to-play-content {
+    flex-direction: row;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .how-to-play-list {
+    max-width: 50%;
+    gap: 20px;
+  }
+  .how-to-play-list-second {
+    gap: 8px;
+  }
+}

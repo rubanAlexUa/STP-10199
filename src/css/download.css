@@ -1,0 +1,91 @@
+.download-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 24px;
+  background-color: #ffd9fa;
+  padding: 32px 0;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.download-subtitle {
+  width: 152px;
+}
+
+.button-game {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+  background-color: #adb7fc;
+  width: 214px;
+  padding: 16px 13px;
+}
+
+.button-game:hover {
+  background-color: #8f9ffb;
+  cursor: pointer;
+}
+.button-game:active,
+.button-game:focus {
+  background-color: #8f9ffb;
+  cursor: pointer;
+  box-shadow: 0px 4px #00000059;
+}
+.game-link {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+}
+
+.download-score {
+}
+
+.download-about {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-info {
+}
+
+@media (min-width: 1200px) {
+  .download-container {
+    gap: 32px;
+  }
+  .headings {
+    gap: 6px;
+  }
+  .download-subtitle {
+    width: auto;
+  }
+  .button-game {
+    justify-content: center;
+    width: 328px;
+    padding: 24px 0;
+  }
+  .game-link {
+    width: auto;
+    gap: 12px;
+  }
+
+  .download-about {
+    flex-direction: row;
+    gap: 52px;
+  }
+}
