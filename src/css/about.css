@@ -22,6 +22,7 @@
 }
 
 .about-photo {
+  width: 150px;
   border-radius: 16px;
 }
 
@@ -40,7 +41,9 @@
   .about-content {
     flex-direction: row;
   }
-
+  .about-photo {
+    width: auto;
+  }
   .paragraph-about {
     text-align: start;
     width: 678px;
