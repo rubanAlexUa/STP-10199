@@ -5,17 +5,17 @@ const navigationItems = document.querySelectorAll('.link-navigation');
 
 burgerButton.addEventListener('click', () => {
   document.body.style.overflow = 'hidden';
-  burgerButton.classList.toggle('invisible');
-  exitButton.classList.toggle('invisible');
-  menu.classList.toggle('hidden');
+  burgerButton.classList.add('invisible');
+  exitButton.classList.remove('invisible');
+  menu.classList.remove('hidden');
 });
 
 exitButton.addEventListener('click', exitMenu);
 function exitMenu() {
   document.body.style.overflow = 'visible';
-  burgerButton.classList.toggle('invisible');
-  exitButton.classList.toggle('invisible');
-  menu.classList.toggle('hidden');
+  burgerButton.classList.remove('invisible');
+  exitButton.classList.add('invisible');
+  menu.classList.add('hidden');
 }
 function smoothScroll(section) {
   console.log(section);
