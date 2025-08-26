@@ -62,13 +62,10 @@
   position: absolute;
 }
 .paint {
-  width: 800px;
-  left: 60px;
   z-index: -1;
 }
 
 .brush {
-  right: 70px;
 }
 
 @media screen and (min-width: 1200px) {
