@@ -1,25 +1,40 @@
 <section class="key-features" id="key-features">
   <div class="container key-features-container">
+    <picture>
+      <source
+        srcset="../img/icons/pussle-desktop.svg"
+        media="(min-width: 1200px)"
+      />
+      <img
+        src="../img/icons/pussle-mobile.svg"
+        alt="pussle img"
+        class="pussle features-pussle"
+      />
+    </picture>
     <h2 class="key-features-title">Features</h2>
 
     <div class="key-features-content">
       <picture>
-        <source srcset="
+        <source
+          srcset="
             ../img/key-features/features-mobile@1x.jpg 1x,
             ../img/key-features/features-mobile@2x.jpg 2x
-          " media="(max-width: 767px)" />
-        <source srcset="
-            ../img/key-features/features-desk1280@1x.jpg 1x,
-            ../img/key-features/features-desk1280@2x.jpg 2x
-          " media="(min-width: 1280px) and (max-width: 1439px)" />
-        <source srcset="
-            ../img/key-features/features-desk1440@1x.jpg 1x,
-            ../img/key-features/features-desk1440@2x.jpg 2x
-          " media="(min-width: 1440px)" />
-        <img width="332" height="335" class="key-features-photo" src="../img/key-features/features-desk1280@1x.jpg"
-          alt="key-features" />
+          "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ../img/key-features/features-desk1200@1x.jpg 1x,
+            ../img/key-features/features-desk1200@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="key-features-photo"
+          src="../img/key-features/features-desk1200@1x.jpg"
+          alt="key-features"
+        />
       </picture>
-
 
       <ul class="key-features-list">
         <li class="key-features-item">
@@ -27,8 +42,8 @@
             <use href="../img/icons/puzzle.svg"></use>
           </svg>
           <p class="key-features-paragraph">
-            Narrative Merge Gameplay: Solve merge puzzles to unlock story content
-            and choices
+            Narrative Merge Gameplay: Solve merge puzzles to unlock story
+            content and choices
           </p>
         </li>
 
@@ -87,7 +102,8 @@
             <use href="../img/icons/update.svg"></use>
           </svg>
           <p class="key-features-paragraph">
-            Frequent Updates: New love stories and merge maps are added regularly.
+            Frequent Updates: New love stories and merge maps are added
+            regularly.
           </p>
         </li>
       </ul>
