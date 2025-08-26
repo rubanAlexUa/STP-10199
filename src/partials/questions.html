@@ -20,9 +20,24 @@
             in-app purchases for boosters and cosmetics, but the full story can
             be enjoyed without spending.
           </p>
-          <svg class="paint">
-            <use href="./img/icons/paint.svg"></use>
-          </svg>
+          <picture>
+            <source
+              srcset="./img/icons/paint-mobile.svg"
+              media="(max-width: 1200px)"
+            />
+            <source
+              srcset="./img/icons/paint-desktop.svg"
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="paint"
+              src="./img/icons/paint-desktop.svg"
+              alt="about"
+            />
+          </picture>
+          <!-- <svg class="paint">
+            <use href="./img/icons/paint-desktop.svg"></use>
+          </svg> -->
           <svg class="brush" width="80" height="80">
             <use href="./img/icons/color-brush.svg"></use>
           </svg>

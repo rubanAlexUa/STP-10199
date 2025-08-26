@@ -58,11 +58,15 @@
 }
 
 .paint,
-.brash {
+.brush {
   position: absolute;
 }
 .paint {
   z-index: -1;
+  left: 30px;
+  top: 30px;
+  position: absolute;
+  width: 270px;
 }
 
 .brush {
@@ -73,9 +77,11 @@
     width: 800px;
     left: 60px;
     z-index: -1;
+    top: 35px;
   }
 
   .brush {
+    top: 40px;
     right: 70px;
   }
 }
