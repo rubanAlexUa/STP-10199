@@ -52,9 +52,13 @@
 }
 
 .decorated-list {
-  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 30px;
   list-style: disc;
 }
+
 .decorated-lists-item.row-lists-item > p,
 .decorated-lists-item.row-lists-item > h3 {
   display: inline;
@@ -63,6 +67,10 @@
 .link-info-page {
   text-decoration: underline;
   text-underline-offset: 5px;
+}
+
+.type-info {
+  padding: 12px 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -98,5 +106,9 @@
   }
   .decorated-list {
     padding-left: 50px;
+    gap: 24px;
+  }
+  .type-info {
+    padding: 24px 0;
   }
 }
