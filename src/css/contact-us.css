@@ -3,13 +3,14 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  gap: 24px;
+  gap: 16px;
 }
 .main-contacts-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  gap: 100px;
+  align-items: center;
+  gap: 8px;
 }
 .main-contacts-item {
   display: flex;
@@ -18,4 +19,23 @@
 .value-of-contact {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+.social-networks-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .contact-us-container {
+    gap: 24px;
+  }
+  .main-contacts-list {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .social-networks-list {
+    gap: 64px;
+  }
 }
