@@ -1,3 +1,168 @@
 <section class="gallery" id="gallery">
-  <div class="container"></div>
+  <div class="container gallery-container">
+    <picture>
+      <source
+        srcset="./img/icons/pussle-desktop.svg"
+        media="(min-width: 1200px)"
+      />
+      <img
+        src="./img/icons/pussle-mobile.svg"
+        alt="pussle img"
+        class="pussle gallery-pussle-top"
+      />
+    </picture>
+    <h2 class="gallery-head">Gallery</h2>
+
+    <div class="swiper gallery-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./img/gallery/gallery-mobile@1x.jpg 1x,
+                ./img/gallery/gallery-mobile@2x.jpg 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./img/gallery/gallery-desk1200@1x.jpg 1x,
+                ./img/gallery/gallery-desk1200@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="gallery-photo"
+              src="./img/gallery/gallery-desk1200@1x.jpg"
+              alt="gallery-photo"
+            />
+          </picture>
+        </div>
+
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./img/gallery/gallery2-mobile@1x.jpg 1x,
+                ./img/gallery/gallery2-mobile@2x.jpg 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./img/gallery/gallery2-desk1200@1x.jpg 1x,
+                ./img/gallery/gallery2-desk1200@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="gallery-photo"
+              src="./img/gallery/gallery2-desk1200@1x.jpg"
+              alt="gallery-photo"
+            />
+          </picture>
+        </div>
+
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./img/gallery/gallery-3-mobile@1x.jpg 1x,
+                ./img/gallery/gallery-3-mobile@2x.jpg 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./img/gallery/gallery-3-desk1200@1x.jpg 1x,
+                ./img/gallery/gallery-3-desk1200@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="gallery-photo"
+              src="./img/gallery/gallery-3-desk1200@1x.jpg"
+              alt="gallery-photo"
+            />
+          </picture>
+        </div>
+
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./img/gallery/gallery4-mobile@1x.jpg 1x,
+                ./img/gallery/gallery4-mobile@2x.jpg 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./img/gallery/gallery4-desk1200@1x.jpg 1x,
+                ./img/gallery/gallery4-desk1200@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="gallery-photo"
+              src="./img/gallery/gallery4-desk1200@1x.jpg"
+              alt="gallery-photo"
+            />
+          </picture>
+        </div>
+
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./img/gallery/gallery5-mobile@1x.jpg 1x,
+                ./img/gallery/gallery5-mobile@2x.jpg 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./img/gallery/gallery5-desk1200@1x.jpg 1x,
+                ./img/gallery/gallery5-desk1200@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="gallery-photo"
+              src="./img/gallery/gallery5-desk1200@1x.jpg"
+              alt="gallery-photo"
+            />
+          </picture>
+        </div>
+
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./img/gallery/gallery6-mobile@1x.jpg 1x,
+                ./img/gallery/gallery6-mobile@2x.jpg 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./img/gallery/gallery6-desk1200@1x.jpg 1x,
+                ./img/gallery/gallery6-desk1200@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="gallery-photo"
+              src="./img/gallery/gallery6-desk1200@1x.jpg"
+              alt="gallery-photo"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-custom">
+      <div class="swiper-button-prev button-prev"></div>
+      <div class="swiper-button-next button-next"></div>
+    </div>
+  </div>
 </section>

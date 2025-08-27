@@ -1,2 +1,3 @@
-import './js/gallery.js';
-import './js/header.js';
+import './js/gallery';
+import './js/header';
+import './js/questions';
