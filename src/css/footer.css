@@ -1,9 +1,14 @@
+.footer {
+  margin-top: 29px;
+  background-color: #ffd9fa;
+  border-radius: 8px 8px 0 0;
+}
 .footer-container {
   padding-bottom: 0;
+  padding-top: 0;
 }
 .footer-wrapper {
   padding: 12px 0;
-  background-color: #ffd9fa;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -25,6 +30,10 @@
   gap: 8px;
 }
 @media screen and (min-width: 1200px) {
+  .footer {
+    margin-top: 48px;
+    border-radius: 16px 16px 0 0;
+  }
   .footer-wrapper {
     gap: 16px;
     padding: 16px 0;

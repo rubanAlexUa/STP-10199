@@ -5,24 +5,23 @@ const navigationItems = document.querySelectorAll('.link-navigation');
 
 burgerButton.addEventListener('click', () => {
   document.body.style.overflow = 'hidden';
-  burgerButton.classList.add('invisible');
-  exitButton.classList.remove('invisible');
-  menu.classList.remove('hidden');
+  burgerButton.classList.add('js-invisible');
+  exitButton.classList.remove('js-invisible');
+  menu.classList.remove('js-hidden');
 });
-function openmodal() {}
 
 exitButton.addEventListener('click', exitMenu);
 function exitMenu() {
   document.body.style.overflow = 'visible';
-  burgerButton.classList.remove('invisible');
-  exitButton.classList.add('invisible');
-  menu.classList.add('hidden');
+  burgerButton.classList.remove('js-invisible');
+  exitButton.classList.add('js-invisible');
+  menu.classList.add('js-hidden');
 }
 function smoothScroll(section) {
   console.log(section);
   const elem = document.querySelector(`#${section}`);
   window.scrollTo({
-    top: elem.offsetTop,
+    top: elem.offsetTop - 70,
     behavior: 'smooth',
   });
 }
