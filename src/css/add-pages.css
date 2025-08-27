@@ -37,18 +37,14 @@
   line-height: 20px;
   margin-bottom: 24px;
 }
-.main-info h2 {
+.main-info h2,
+.main-info h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
 }
-.main-info h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-}
+
 .terms-list {
   display: flex;
   flex-direction: column;
@@ -95,12 +91,9 @@
     font-size: 26px;
     line-height: 30px;
   }
-  .main-info h2 {
-    font-size: 24px;
-    line-height: 36px;
-  }
+  .main-info h2,
   .main-info h3 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 36px;
   }
   .decorated-list {
