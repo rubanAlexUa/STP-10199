@@ -5,6 +5,11 @@
   text-align: center;
   gap: 16px;
 }
+.contact-us-pussle {
+  right: 20px;
+  top: 25px;
+  transform: rotate(-20deg);
+}
 .main-contacts-list {
   display: flex;
   flex-direction: column;
@@ -30,6 +35,11 @@
 @media screen and (min-width: 1200px) {
   .contact-us-container {
     gap: 24px;
+  }
+  .contact-us-pussle {
+    right: 60px;
+    top: -40px;
+    transform: rotate(60deg);
   }
   .main-contacts-list {
     flex-direction: row;
