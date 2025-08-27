@@ -1,5 +1,11 @@
+.gallery-pussle-top {
+  transform: rotate(-200deg);
+  left: 60px;
+  top: 10px;
+}
 .gallery-head {
-  margin-bottom: 32px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .swiper-slide {
@@ -22,6 +28,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .gallery-head {
+    margin-bottom: 32px;
+  }
+  .gallery-pussle-top {
+    left: 100px;
+    top: -40px;
+  }
   .swiper-custom .swiper-button-prev,
   .swiper-custom .swiper-button-next {
     display: block;
