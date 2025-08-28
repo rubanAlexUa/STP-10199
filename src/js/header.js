@@ -1,7 +1,7 @@
-const burgerButton = document.querySelector('.burger-button');
-const exitButton = document.querySelector('.exit-button');
-const menu = document.querySelector('.menu');
-const navigationItems = document.querySelectorAll('.link-navigation');
+const burgerButton = document.querySelector('.js-burger-button');
+const exitButton = document.querySelector('.js-exit-button');
+const menu = document.querySelector('.js-menu');
+const navigationItems = document.querySelectorAll('.js-link-navigation');
 
 burgerButton.addEventListener('click', () => {
   document.body.style.overflow = 'hidden';
