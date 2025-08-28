@@ -26,7 +26,7 @@
 .key-features-list {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 
 .key-features-item {
@@ -55,7 +55,7 @@
     max-width: none;
   }
 
-  .icon {
-    flex-shrink: 0;
+  .key-features-list {
+    gap: 4px;
   }
 }

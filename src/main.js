@@ -1,3 +1,4 @@
 import './js/gallery';
 import './js/header';
 import './js/questions';
+import './js/popup-cookies';

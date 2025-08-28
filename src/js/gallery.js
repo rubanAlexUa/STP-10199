@@ -3,7 +3,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-new Swiper('.swiper', {
+new Swiper('.js-gallery .swiper', {
   modules: [Navigation],
   centeredSlides: false,
   watchOverflow: true,
@@ -13,8 +13,8 @@ new Swiper('.swiper', {
 
   navigation: {
     enabled: false,
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.js-gallery .swiper-button-next',
+    prevEl: '.js-gallery.swiper-button-prev',
   },
 
   breakpoints: {

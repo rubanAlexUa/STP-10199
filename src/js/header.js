@@ -21,7 +21,7 @@ function smoothScroll(section) {
   console.log(section);
   const elem = document.querySelector(`#${section}`);
   window.scrollTo({
-    top: elem.offsetTop - 70,
+    top: elem.offsetTop - 100,
     behavior: 'smooth',
   });
 }

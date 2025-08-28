@@ -1,7 +1,7 @@
 .header {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 100;
   margin-bottom: 29px;
   background: linear-gradient(#fa8fe3, #ffd9fa, #8e5fcf);
   border-radius: 0 0 8px 8px;
@@ -89,6 +89,9 @@
   gap: 16px 50px;
 }
 
+.menu-item-navigation:hover {
+  cursor: pointer;
+}
 .exit-button {
   background-color: transparent;
   border: none;
@@ -98,9 +101,6 @@
 
 @media screen and (min-width: 1200px) {
   .header {
-    position: sticky;
-    top: 0;
-    z-index: 2;
     margin-bottom: 48px;
   }
   .header-container {
@@ -157,6 +157,9 @@
     width: calc((100% - 250px) / 6);
     text-align: center;
     transition: all 0.3s ease;
+  }
+  .item-navigation:hover {
+    cursor: pointer;
   }
   .item-navigation:active,
   .item-navigation:focus {
